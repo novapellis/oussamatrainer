@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title data-title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="lib/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="lib/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="lib/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="lib/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="lib/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="lib/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem"
+      ></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <span class="fa fa-phone-alt me-2"></span>
+            <span>+012 345 6789</span>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <span class="far fa-envelope me-2"></span>
+            <span>info@example.com</span>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center mx-n2">
+            <span>follow Us</span>
+            <a class="btn btn-link text-light" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-link text-light" href=""
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            
+            <a class="btn btn-link text-light" href=""
+              ><i class="bi bi-telephone icone"></i></a>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+      <img src="img/logo.png" alt="logo" width="85px">    
+</a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="#" class="nav-item nav-link active" data-Home></a>
+          <a href="#about" class="nav-item nav-link" data-About></a>
+          <a href="#services" class="nav-item nav-link" data-Service></a>
+          <a href="#slider" class="nav-item nav-link" data-ProjectList></a>
+          <a href="contact.html" class="nav-item nav-link" data-Contact></a>
+        </div>
+        <select
+        data-langSelector
+        onchange="localStorage.setItem('lang', this.value); location.reload()"
+      ></select>
+      <a
+      href="contact.html"
+      class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block"
+      data-GetAQuote><i class="fa fa-arrow-right ms-3"></i></a>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img class="w-100" src="img/carousel-1.png" alt="Image" />
+    <div class="carousel-caption">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1
+              class="display-1 text-white mb-5 animated slideInDown"
+              data-PersevereRelentlessly
+            ></h1>
+            <a
+              href="#about"
+              class="btn btn-primary py-sm-3 px-sm-4"
+              data-ExploreMore
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img class="w-100" src="img/carousel-2.png" alt="Image" />
+    <div class="carousel-caption">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h1
+              class="display-1 text-white mb-5 animated slideInDown"
+              data-FightForSuccess
+            ></h1>
+            <a
+              href="#about"
+              class="btn btn-primary py-sm-3 px-sm-4"
+              data-ExploreMore
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button
+  class="carousel-control-prev"
+  type="button"
+  data-bs-target="#header-carousel"
+  data-bs-slide="prev"
+>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden" data-Previous></span>
+</button>
+<button
+  class="carousel-control-next"
+  type="button"
+  data-bs-target="#header-carousel"
+  data-bs-slide="next"
+>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden" data-Next></span>
+</button>
+</div>
+</div>
+<!-- Carousel End -->
+
+<!-- Top Feature Start -->
+<div class="container-fluid top-feature py-5 pt-lg-0">
+  
+  <div class="container py-5 pt-lg-0" >
+    <div class="row gx-0" >
+      <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s" >
+        <div
+          class="bg-white shadow d-flex align-items-center h-100 px-5"
+          style="min-height: 160px"
+          
+        >
+          <div class="d-flex">
+            <div
+              class="flex-shrink-0 btn-lg-square rounded-circle bg-light"
+              
+            >
+            <i class="fas fa-dumbbell text-primary"></i>
+            </div>
+            <div class="ps-3" >
+              <h4 data-feature1>Personalized Training Plans</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" >
+        <div
+          class="bg-white shadow d-flex align-items-center h-100 px-5"
+          style="min-height: 160px"
+        >
+          <div class="d-flex">
+            <div
+              class="flex-shrink-0 btn-lg-square rounded-circle bg-light"
+            >
+            <i class="fas fa-video text-primary"></i>
+            </div>
+            <div class="ps-3" >
+              <h4 data-feature2>Virtual Coaching and Support</h4>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" >
+        <div
+          class="bg-white shadow d-flex align-items-center h-100 px-5"
+          style="min-height: 160px"
+        >
+          <div class="d-flex">
+            <div
+              class="flex-shrink-0 btn-lg-square rounded-circle bg-light"
+            >
+            <i class="fas fa-folder-open text-primary"></i>                </div>
+            <div class="ps-3">
+              <h4 data-feature3="fitness-resources-title">Access to a Wide Range of Fitness Resources</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Top Feature End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+      <div class="container">
+        <div class="row g-5 align-items-end">
+          <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+            <img
+              class="img-fluid rounded"
+              data-wow-delay="0.1s"
+              src="img/about.jpg"
+            />
+          </div>
+          <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+            
+            <h1 class="display-5 mb-4" data-title1></h1>
+            <p class="mb-4" data-desc1>
+            </p>
+            <a class="btn btn-primary py-3 px-4" href="#about"data-ExploreMore></a>
+          </div>
+          <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row g-5">
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="border-start ps-4">
+                  <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3" data-PresExper>Preserving Experiences</h4>
+                  <span
+                    data-desc2></span
+                  >
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="border-start ps-4">
+                  <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3" data-DediTeam></h4>
+                  <span
+                    data-desc3></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Facts Start -->
+    <div
+      class="container-fluid facts my-5 py-5"
+      data-parallax="scroll"
+      data-image-src="img/carousel-3.png"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <h1 class="display-4 text-white" data-toggle="counter-up">12</h1>
+            <span class="fs-5 fw-semi-bold text-light" data-facts4></span>
+          </div>
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <h1 class="display-4 text-white" data-toggle="counter-up">54</h1>
+            <span class="fs-5 fw-semi-bold text-light" data-facts1></span>
+          </div>
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <h1 class="display-4 text-white" data-toggle="counter-up">122</h1>
+            <span class="fs-5 fw-semi-bold text-light" data-facts2></span>
+          </div>
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <h1 class="display-4 text-white" data-toggle="counter-up">40</h1>
+            <span class="fs-5 fw-semi-bold text-light" data-facts3></span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="position-relative me-lg-4">
+                      <img class="img-fluid w-100" src="img/about-2.png" alt="">
+                      <span
+                          class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
+                          style="width: 120px; height: 120px;"></span>
+                      <button type="button" class="btn-play" data-bs-toggle="modal"
+                          data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                          <span></span>
+                      </button>
+                  </div>
+              </div>
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <p class="fw-medium text-uppercase text-primary mb-2" data-title2></p>
+                  <h1 class="display-5 mb-4" data-title3></h1>
+                  <p class="mb-4" style="text-align: center;" data-desc4>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Features End -->
+
+
+  <!-- Video Modal Start -->
+  <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content rounded-0">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel" dta-info1></h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <!-- 16:9 aspect ratio -->
+                  <div class="ratio ratio-16x9">
+                      <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                          allowscriptaccess="always" allow="autoplay"></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Video Modal End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="services">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <p class="fs-5 fw-bold text-primary" data-title4></p>
+          <h1 class="display-5 mb-5" data-title5></h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img class="img-fluid" src="img/service-1.jpg" alt="" />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon" />
+                </div>
+                <h4 class="mb-3" data-title6></h4>
+                <p class="mb-4" data-desc5>
+                </p>
+                <a class="btn btn-sm" href="#footer"
+                  ><i class="fa fa-plus text-primary me-2" data-readmore></i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img class="img-fluid" src="img/service-2.jpg" alt="" />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon" />
+                </div>
+                <h4 class="mb-3" data-title7></h4>
+                <p class="mb-4" data-desc6>
+                </p>
+                <a class="btn btn-sm" href="#footer"
+                  ><i class="fa fa-plus text-primary me-2" data-readmore></i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded d-flex h-100">
+              <div class="service-img rounded">
+                <img class="img-fluid" src="img/service-3.jpg" alt="" />
+              </div>
+              <div class="service-text rounded p-5">
+                <div class="btn-square rounded-circle mx-auto mb-3">
+                  <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
+                </div>
+                <h4 class="mb-3" data-title8></h4>
+                <p class="mb-4" data-desc7>
+
+                </p>
+                <a class="btn btn-sm" href="#footer"
+                  ><i class="fa fa-plus text-primary me-2" data-readmore></i></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+    
+    <!-- Timeline -->
+
+    <h1 data-title9></h1>
+
+    <div class="box-timeline">
+
+        <div class="ligne"></div>
+
+        <div class="rond r1" data-anim="1">&#128220;</div>
+        <div class="rond r2" data-anim="2">&#128300;</div>
+        <div class="rond r3" data-anim="3">&#127919;</div>
+        <div class="rond r4" data-anim="4">&#128588;</div>
+
+
+        <div class="box b1" data-anim="1">
+            <h2 data-title10></h2>
+            <p data-desc8>
+            </p>
+        </div>
+        <div class="box b2" data-anim="2">
+            <h2 data-title11></h2>
+            <p data-desc9>
+            </p>
+        </div>
+        <div class="box b3" data-anim="3">
+          <h2 data-title12></h2>
+          <p data-desc10>
+            
+          </p>
+      </div>
+      <div class="box b4" data-anim="4">
+            <h2 data-title13></h2>
+            <p data-desc11>
+            </p>
+        </div>
+        
+
+    </div>
+    <!-- ======= Gallery Section ======= -->
+    
+    <div class="section-title" >
+          <h2 data-title14></h2>
+          <p data-desc12>
+            </p>
+        </div>
+  <section id="slider" >
+
+  
+    <div class="slider">
+      <div class="images">
+          <input type="radio" name="slide" id="img1" checked>
+          <input type="radio" name="slide" id="img2">
+          <input type="radio" name="slide" id="img3">
+          <input type="radio" name="slide" id="img4">
+
+          <img src="img/tranformation (1).jpeg" class="m1" alt="img1">
+          <img src="img/tranformation (2).jpeg" class="m2" alt="img2">
+          <img src="img/tranformation (3).jpeg" class="m3" alt="img3">
+      </div>
+      <div class="dots">
+          <label for="img1"></label>
+          <label for="img2"></label>
+          <label for="img3"></label>
+          <label for="img4"></label>
+      </div>
+  </div>
+</section>
+    <!-- End Gallery Section -->
+     <!-- ======= Pricing Section ======= -->
+     <section id="pricing" class="pricing section-bg">
+      <div class="container-pricing" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-title15></h2>
+          <p data-desc13></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <h3 data-info2></h3>
+              <h4><sup>dh</sup>1000<span data-month=""> / month</span></h4>
+              <ul>
+                <li data-info3></li>
+                <li data-info4></li>
+                <li data-info5></li>
+                <li data-info6></li>
+                <li data-info7></li>
+                <li data-info8></li>
+                <li class="na" data-info9 style="font-size: 13px;"></li>
+                <li class="na" data-info10 style="font-size: 10px;"></li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="contact.html" class="btn-buy" data-buynow></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3 data-info13></h3>
+              <h4><sup>dh</sup>1500<span data-month=""></span></h4>
+              <ul>
+                <li data-info3></li>
+                <li data-info4></li>
+                <li data-info5></li>
+                <li data-info6></li>
+                <li data-info11></li>
+                <li data-info12></li>
+                <li data-info9 style="font-size: 13px;"></li>
+                <li data-info10 style="font-size: 10px;"></li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="contact.html" class="btn-buy" data-buynow></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3 data-info14></h3>
+              <h4><sup>dh</sup>3200<span data-month=""></span></h4>
+              <ul>
+                
+                <li data-info3></li>
+                <li data-info4></li>
+                <li data-info5></li>
+                <li data-info6></li>
+                <li data-info11></li>
+                <li data-info12></li>
+                <li data-info9 style="font-size: 13px;"></li>
+                <li data-info10 style="font-size: 10px;"></li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="contact.html" class="btn-buy" data-buynow></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3 data-title16> <strong data-title17></strong></h3>
+              <p data-desc14>
+                </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+
+            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1" data-qu1="">                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body" data-desc15>
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2" data-qu2="">
+                
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body" data-desc16>
+                    
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3" data-qu3="">
+                                    </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body" data-desc17="">
+                    
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    
+                   
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                   
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+<!-- ======= Footer ======= -->
+    
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-2">
+        
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon" style="margin-left: 6px;"></i>
+          <div>
+            <h4 data-contact=""></h4>
+            <p>
+              <strong data-contact1="">:</strong> +1 5589 55488 55<br>
+              <strong data-contact2="">Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon" style="margin-left: 6px;"></i>
+          <div>
+            <h4 data-contact3=""></h4>
+            <p>
+              <strong data-contact4=""></strong> 
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4 data-contact5=""></h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-phone"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ob_manager</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://novapellis.tech/">Novapellis</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->    <!-- Back to Top -->
+    <a
+      href=""
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-whatsapp"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/languages.js"></script>
+  </body>
+</html>
